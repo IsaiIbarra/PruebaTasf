@@ -1,0 +1,10 @@
+com\mycompany\pruebatasf\resources\JavaEE8Resource.class
+dtos\UserDto.class
+daos\ProductDao.class
+controller\Controller.class
+daos\UserDao.class
+com\mycompany\pruebatasf\JAXRSConfiguration.class
+interfaces\IProduct.class
+dtos\ProductDto.class
+config\DbConnection.class
+interfaces\IUser.class
