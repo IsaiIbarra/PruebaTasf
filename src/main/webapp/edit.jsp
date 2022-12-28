@@ -24,17 +24,24 @@
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </head>
+    <script>
+        function getTotal(){
+            const quantity = document.getElementById('quantity')?.value;
+            const uni_price = document.getElementById('uni_price')?.value;
+            if(quantity && uni_price){
+                document.getElementById('total').value = quantity * uni_price;
+            }
+        }
+    </script>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-end">
-            <span class="navbar-text text-white p-2">
-                <h4>Editar Producto</h4>
-            </span>
-            <div class="collapse navbar-collapse justify-content-end p-2" id="navbarTogglerDemo03">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="btn btn-sm btn-danger mr-2" href="logout">Cerrar Sesión</a>
-                </li>
-              </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="row w-100 p-2">
+                <div class="col col-md-6 text-start text-white">
+                    <h4>Editar Venta</h4>
+                </div>
+                <div class="col col-md-6 text-end">
+                    <a class="btn btn-sm btn-danger" href="logout">Cerrar Sesión</a>
+                </div>
             </div>
         </nav>
             
@@ -43,14 +50,22 @@
             <div class="card p-3 text-center">
                 <form action="update" method="POST">
                     <h2 class="mb-4">Editar</h2>
-                    <input type="text" hidden name="id" value="${product.id}"/>
+                    <input type="text" hidden name="id" value="${sale.id}"/>
                     <div class="form-group text-start">
-                        <label>Producto:</label>
-                        <input type="text" class="form-control" name="product" value="${product.product}"/>
+                        <label>Descripción del producto:</label>
+                        <input type="text" class="form-control" name="des_prod" required value="${sale.des_prod}"/>
                     </div>
                     <div class="form-group text-start my-3">
                         <label>Cantidad:</label>
-                        <input type="number" class="form-control" name="quantity" value="${product.quantity}"/>
+                        <input id="quantity" type="number" class="form-control" name="quantity" onchange="getTotal()" required value="${sale.quantity}"/>
+                    </div>
+                    <div class="form-group text-start my-3">
+                        <label>Precio unitario:</label>
+                        <input id="uni_price" type="number" class="form-control" name="uni_price" onchange="getTotal()" required value="${sale.uni_price}"/>
+                    </div>
+                    <div class="form-group text-start my-3">
+                        <label>Total:</label>
+                        <input id="total" type="number" class="form-control" name="total" disabled required value="${sale.total}"/>
                     </div>
 
                     <a class="btn btn-secondary mt-2 mr-1" href="home">Volver</a>

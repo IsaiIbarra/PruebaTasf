@@ -1,10 +1,10 @@
 C:\Users\Isai - HP\Documents\NetBeansProjects\PruebaTasf\src\main\java\daos\UserDao.java
-C:\Users\Isai - HP\Documents\NetBeansProjects\PruebaTasf\src\main\java\dtos\ProductDto.java
 C:\Users\Isai - HP\Documents\NetBeansProjects\PruebaTasf\src\main\java\com\mycompany\pruebatasf\JAXRSConfiguration.java
 C:\Users\Isai - HP\Documents\NetBeansProjects\PruebaTasf\src\main\java\interfaces\IUser.java
 C:\Users\Isai - HP\Documents\NetBeansProjects\PruebaTasf\src\main\java\com\mycompany\pruebatasf\resources\JavaEE8Resource.java
 C:\Users\Isai - HP\Documents\NetBeansProjects\PruebaTasf\src\main\java\config\DbConnection.java
-C:\Users\Isai - HP\Documents\NetBeansProjects\PruebaTasf\src\main\java\daos\ProductDao.java
-C:\Users\Isai - HP\Documents\NetBeansProjects\PruebaTasf\src\main\java\interfaces\IProduct.java
+C:\Users\Isai - HP\Documents\NetBeansProjects\PruebaTasf\src\main\java\daos\SalesDao.java
+C:\Users\Isai - HP\Documents\NetBeansProjects\PruebaTasf\src\main\java\dtos\SalesDto.java
 C:\Users\Isai - HP\Documents\NetBeansProjects\PruebaTasf\src\main\java\dtos\UserDto.java
+C:\Users\Isai - HP\Documents\NetBeansProjects\PruebaTasf\src\main\java\interfaces\ISales.java
 C:\Users\Isai - HP\Documents\NetBeansProjects\PruebaTasf\src\main\java\controller\Controller.java
