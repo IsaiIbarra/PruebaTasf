@@ -32,6 +32,8 @@ public class UserDao implements IUser{
             System.out.println("RRRSSSSSSS");
             System.out.println(rs.next());
             
+            con.close();
+            
             if(flag == 1){
                 flag = 0;
                 return 1;

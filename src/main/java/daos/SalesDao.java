@@ -35,6 +35,7 @@ public class SalesDao implements ISales{
 
                 data.add(sale);
             }
+            con.close();
         } catch (SQLException e) {
             System.err.println("Error: " + e.getMessage());
         }
@@ -57,7 +58,7 @@ public class SalesDao implements ISales{
             ps.setFloat(3, sale.getUni_price());
             ps.setFloat(4, sale.getTotal());
             r = ps.executeUpdate();
-            
+            con.close();
             if(r > 0) return 1;
             else return 0;
              
@@ -78,7 +79,7 @@ public class SalesDao implements ISales{
             ps.setFloat(4, sale.getTotal());
             ps.setInt(5, sale.getId());
             r = ps.executeUpdate();
-            
+            con.close();
             if(r > 0)return 1;
             else return 0;
              
@@ -104,6 +105,7 @@ public class SalesDao implements ISales{
                 sale.setUni_price(rs.getFloat("uni_price"));
                 sale.setTotal(rs.getFloat("total"));
             }
+            con.close();
         } catch (SQLException e) {
             System.err.println("Error: " + e.getMessage());
         }

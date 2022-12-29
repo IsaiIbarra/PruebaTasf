@@ -17,8 +17,8 @@ public class DbConnection {
     
     public Connection getConnection(){
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://n0t3efvnqcbexytp:iq4x2a61w2yzg046@o2olb7w3xv09alub.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/gxtwx29qqa7qat9w?useSSL=false", "n0t3efvnqcbexytp", "iq4x2a61w2yzg046");
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con=DriverManager.getConnection("jdbc:mysql://n0t3efvnqcbexytp:footy9cmy3lx33ut@o2olb7w3xv09alub.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/gxtwx29qqa7qat9w?useSSL=false", "n0t3efvnqcbexytp", "footy9cmy3lx33ut");
             
         } catch (Exception e) {
         }
